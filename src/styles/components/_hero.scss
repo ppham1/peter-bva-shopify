@@ -8,9 +8,62 @@
   color: #fff;
   width: 100%;
   justify-content: flex-start;
-  height: 35vw;
+  height: 45vw;
+
+  @media screen and (max-width: 730px) {
+    height: 50rem;
+  }
 }
 
 .hero-content {
   position: relative;
+  padding: 25px 50px;
+}
+
+.hero-header {
+  font-size: 2.25rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0;
+
+  @media screen and (min-width: 730px) {
+    font-size: 2.875rem;
+  }
+}
+
+.hero-subtext {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+
+  @media screen and (min-width: 730px) {
+    font-size: 1.5rem;
+  }
+}
+
+.cta {
+  background-color: #57ad68;
+  font-size: 20px;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #57ad68;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }

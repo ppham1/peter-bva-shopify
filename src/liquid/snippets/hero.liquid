@@ -1,17 +1,21 @@
 <style>
-.hero-image-{{ section.id }}{
-    background-image: url({{ section.settings.image | img_url: 'master'}});
-}
-
-    
-}
+@media screen and (max-width: 730px) {
+    .hero-image-{{ section.id }}{
+        background-image: url({{ section.settings.image | img_url: '700x'}});
+    }
+  }
+@media screen and (min-width: 730px) {
+    .hero-image-{{ section.id }}{
+        background-image: url({{ section.settings.image | img_url: '1024x'}});
+    }
+  }  
 </style>
 
 
 <section class="hero hero-image-{{ section.id }}">
     <div class="hero-content">
     <h2 class="hero-header">{{ section.settings.hero_title }}</h2>
-    <p>{{ section.settings.subtext }}</p>
-    <a href={{section.settings.button_link}} class="cta">{{section.settings.button_text }}</a>
+    <p class="hero-subtext">{{ section.settings.subtext }}</p>
+    <a href="{{section.settings.button_link}}" class="cta">{{section.settings.button_text }}</a>
     </div>
 </section>
