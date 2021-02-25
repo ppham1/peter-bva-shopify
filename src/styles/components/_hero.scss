@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 50px, 50px;
+  color: #fff;
+  width: 100%;
+  justify-content: flex-start;
+  height: 35vw;
+}
+
+.hero-content {
+  position: relative;
+}
